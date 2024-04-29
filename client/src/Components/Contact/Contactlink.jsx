@@ -52,7 +52,7 @@ const Contactlink = () => {
   useEffect(()=>{
     const fetchAttorney = async() =>{
 
-        const {data} = await axios.get("https://lawsuitbackend-rambos-projects-a1065a11.vercel.app/api/v1/user/Attorneys",
+        const {data} = await axios.get("/api/v1/user/Attorneys",
 
       {withCredentials:true}
     );
@@ -65,7 +65,7 @@ const Contactlink = () => {
     e.preventDefault();
     try {
       const hasVisitedBool = Boolean(hasVisited);
-      const {data} = await axios.post("https://lawsuitbackend-rambos-projects-a1065a11.vercel.app/api/v1/appointment/post",{
+      const {data} = await axios.post("/api/v1/appointment/post",{
         firstName,lastName,email,dob,gender,phone,Appointment_date,Address,attorney_firstName,attorney_lastName,department,hasVisited:hasVisitedBool,
       },{
         withCredentials:true,

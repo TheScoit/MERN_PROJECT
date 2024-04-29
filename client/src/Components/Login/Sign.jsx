@@ -22,7 +22,7 @@ function SignIn() {
   const handleLogin = async(e) =>{
     e.preventDefault();
     try {
-      const response = await axios.post("https://lawsuitbackend-rambos-projects-a1065a11.vercel.app/api/v1/user/login",
+      const response = await axios.post("/api/v1/user/login",
       {email, password , confirmPassword , role:"Litigant"},
       {
        withCredentials : true,

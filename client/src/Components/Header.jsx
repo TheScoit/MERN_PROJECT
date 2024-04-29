@@ -31,7 +31,7 @@ function Header() {
   }
 
   const handleLogout = async() =>{
-      await axios.get("https://lawsuitbackend-rambos-projects-a1065a11.vercel.app/api/v1/user/litigant/logout",{
+      await axios.get("/api/v1/user/litigant/logout",{
         withCredentials:true,
       })
       .then((res) =>{
