@@ -30,7 +30,7 @@ function App() {
   useEffect(() => {
     const fetchUser = async () => {
       try {
-        const response = await axios.get('/api/v1/user/litigant/me', {
+        const response = await axios.get('http://localhost:5757/api/v1/user/litigant/me', {
           withCredentials: true,
         });
         setIsAuthenticated(true);

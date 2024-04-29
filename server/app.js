@@ -8,7 +8,7 @@ import messageRouter from './router/messageRouter.js'
 import {errorMiddleware} from './middlewares/errorMiddleware.js'
 import userRouter from './router/userRouter.js'
 import appointmentRouter from './router/appointmentRouter.js'
-
+import axios from 'axios'
 const app = express();
 config({path:"./config/config.env"})
 

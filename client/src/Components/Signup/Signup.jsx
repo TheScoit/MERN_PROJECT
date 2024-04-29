@@ -27,7 +27,7 @@ const Signup = () => {
   const handleRegister = async(e) =>{
     e.preventDefault();
     try {
-      const response = await axios.post("/api/v1/user/litigant/register",
+      const response = await axios.post("http://localhost:5757/api/v1/user/litigant/register",
       {firstName,lastName,email,password,dob,gender,phone ,role:"Litigant"},
       {
        withCredentials : true,
