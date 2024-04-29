@@ -14,11 +14,8 @@ config({path:"./config/config.env"})
 
 
 app.use(cors({
-<<<<<<< HEAD
+
     origin:["https://lawsuit-rambos-projects-a1065a11.vercel.app",process.env.DASHBOARD_URL],
-=======
-    origin:["https://lawsuit-rambos-projects-a1065a11.vercel.app"],
->>>>>>> 0044ceb990974811c087f227d66a2b35d15c531a
     methods: ["GET","POST","PUT","DELETE"],
     credentials: true,
     })

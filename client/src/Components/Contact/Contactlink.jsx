@@ -51,11 +51,9 @@ const Contactlink = () => {
   const [attorney,setAttorney] = useState([]);
   useEffect(()=>{
     const fetchAttorney = async() =>{
-<<<<<<< HEAD
+
         const {data} = await axios.get("https://lawsuitbackend-rambos-projects-a1065a11.vercel.app/api/v1/user/Attorneys",
-=======
-        const {data} = await axios.get("https://mern-project-six-beta.vercel.app/api/v1/user/Attorneys",
->>>>>>> 0044ceb990974811c087f227d66a2b35d15c531a
+
       {withCredentials:true}
     );
     setAttorney(data.attorney);
