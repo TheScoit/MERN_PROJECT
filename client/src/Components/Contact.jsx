@@ -13,7 +13,7 @@ const Contact = () => {
   const handleMessage = async(e) =>{
     e.preventDefault();
     try {
-      await axios.post("http://localhost:5757/api/v1/message/send",{firstName,lastName,email,contact,message} , {
+      await axios.post("https://mern-project-six-beta.vercel.app/api/v1/message/send",{firstName,lastName,email,contact,message} , {
         withCredentials:true,
         headers:{
           "Content-Type":"application/json",

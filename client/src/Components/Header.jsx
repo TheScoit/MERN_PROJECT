@@ -31,7 +31,7 @@ function Header() {
   }
 
   const handleLogout = async() =>{
-      await axios.get("http://localhost:5757/api/v1/user/litigant/logout",{
+      await axios.get("https://mern-project-six-beta.vercel.app/api/v1/user/litigant/logout",{
         withCredentials:true,
       })
       .then((res) =>{

@@ -63,7 +63,7 @@ const Contactlink = () => {
     e.preventDefault();
     try {
       const hasVisitedBool = Boolean(hasVisited);
-      const {data} = await axios.post("http://localhost:5757/api/v1/appointment/post",{
+      const {data} = await axios.post("https://mern-project-six-beta.vercel.app/api/v1/appointment/post",{
         firstName,lastName,email,dob,gender,phone,Appointment_date,Address,attorney_firstName,attorney_lastName,department,hasVisited:hasVisitedBool,
       },{
         withCredentials:true,
