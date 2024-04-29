@@ -51,7 +51,7 @@ const Contactlink = () => {
   const [attorney,setAttorney] = useState([]);
   useEffect(()=>{
     const fetchAttorney = async() =>{
-        const {data} = await axios.get("http://localhost:5757/api/v1/user/Attorneys",
+        const {data} = await axios.get("https://mern-project-six-beta.vercel.app/api/v1/user/Attorneys",
       {withCredentials:true}
     );
     setAttorney(data.attorney);
