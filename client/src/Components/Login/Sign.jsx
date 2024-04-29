@@ -16,7 +16,7 @@ function SignIn() {
   const [confirmPassword , setConfirmPassword] = useState("");
   const navigateTo = useNavigate();
   const signup = () =>{
-  navigateTo = ('/signup');
+  navigateTo = ('/signup')
   }
 
   const handleLogin = async(e) =>{
