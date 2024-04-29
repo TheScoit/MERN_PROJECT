@@ -1,0 +1,45 @@
+.lawyer{
+    /* background-color: #343434; */
+    height: 60vh;
+    position: relative;
+    top: 45vh;
+    
+}
+
+.lawyer__heading h2{
+    font-size: 4vh;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    color: #f49200;
+}
+
+
+.lawyer__cards{
+    position: relative;
+    top: 3%;
+   
+    justify-content: center;
+   
+   
+}
+.lawyer__cardsup{
+    position: relative;
+    gap: 10px;
+    display:flex;
+    height: 30vh;
+    width: 100%;
+    /* background-color: red; */
+
+}
+
+.lawyer__cardsdown{
+    position: relative;
+    top: 20vh;
+    display:flex;
+    height: 30vh;
+    width: 100%;
+    /* background-color: blue; */
+    gap: 10px;
+}
+

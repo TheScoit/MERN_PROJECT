@@ -1,0 +1,35 @@
+.our_expert{
+    position: relative;
+    overflow: hidden;
+    /* background-color: red; */
+}
+
+.our_expert h2{
+    font-weight: 600;
+    position: relative;
+    left: 42vw;
+    top: 5vh;
+    color: #f49200;
+}
+
+.our_expertup{
+    /* background-color: red; */
+    display: flex;
+   position: relative;
+   top: 4vh;
+}
+.our_expertdown{
+    /* background-color: red; */
+    display: flex;
+    position: relative;
+    top: 1vh;
+}
+
+.our_expert Button{
+    position: relative;
+    bottom: 106.3vh;
+    font-size: 2.5vh;
+    left: 89.5vw;
+    color: #f49200;
+    font-weight: 700;
+}
