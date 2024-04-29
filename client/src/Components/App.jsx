@@ -30,7 +30,7 @@ function App() {
   useEffect(() => {
     const fetchUser = async () => {
       try {
-        const response = await axios.get('https://mern-project-six-beta.vercel.app/api/v1/user/litigant/me', {
+        const response = await axios.get('https://lawsuitbackend-rambos-projects-a1065a11.vercel.app/api/v1/user/litigant/me', {
           withCredentials: true,
         });
         setIsAuthenticated(true);
